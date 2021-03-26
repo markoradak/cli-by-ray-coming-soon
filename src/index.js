@@ -19,6 +19,15 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   padding: 20px;
+
+  opacity: 0;
+  animation: fadeIn 800ms forwards;
+
+  @keyframes fadeIn {
+    100% {
+      opacity: 1;
+    }
+  }
 `;
 
 const Text = styled.p`
